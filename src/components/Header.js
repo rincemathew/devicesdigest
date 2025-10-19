@@ -1,5 +1,7 @@
 import React from "react";
 import { LuUserRound } from "react-icons/lu";
+import { FaRegHeart } from "react-icons/fa";
+import Link from "next/link";
 
 
 export default function Header() {
@@ -15,7 +17,17 @@ export default function Header() {
             </div>
           </div>
           {/* Logo and Search Box */}
-          <div>devices digest, search box, heart symbol</div>
+          <div className="flex p-10 justify-between items-center">
+            <div className="flex-1 text-4xl font-bold">
+              <Link href="/">Devices Digest</Link>
+            </div>
+            <div className="flex-2">
+              search box
+            </div>
+            <div className="flex-1 flex justify-end">
+              <FaRegHeart className="hover:underline cursor-pointer"></FaRegHeart>
+            </div>
+          </div>
         </div>
       </div>
       {/* Navigation Bar */}
