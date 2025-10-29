@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="flex flex-col justify-center items-center bg-(--color-main)">
       {/* Desktop Header */}
-      <div className="w-full md:w-3/4 bg-(--color-secondary)">
+      <div className="w-full md:w-3/4">
         <div className="hidden md:block pt-1">
           <div>
             <div className="flex justify-end text-xs">
@@ -55,9 +55,15 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <hr className="border-black h-1 w-full"></hr>
+      <hr className="border-black w-full"></hr>
       {/* Navigation Bar */}
-      <nav>Mobiles and Tablets, gadgets, Articles etc</nav>
+      <nav className="flex justify-start w-full items-stretch md:w-3/4 text-sm font-medium">
+        <Link href='/mobiles' className="p-4">Mobiles</Link>
+        <div class="self-stretch w-px bg-black"></div>
+        <Link href='/tablets' className="p-4">Tablets</Link>
+        <div class="self-stretch w-px bg-black"></div>
+        <Link href='/watches' className="p-4">Watches</Link>
+      </nav>
       {/* Mobile Header */}
       <div className="md:hidden">
         this is mobile header
