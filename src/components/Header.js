@@ -55,9 +55,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <hr className="border-black w-full"></hr>
+      <hr className="hidden md:block border-black w-full"></hr>
       {/* Navigation Bar */}
-      <nav className="flex justify-start w-full items-stretch md:w-3/4 text-sm font-medium">
+      <nav className="hidden md:flex justify-start w-full items-stretch md:w-3/4 text-sm font-medium">
         <Link href='/mobiles' className="p-4">Mobiles</Link>
         <div class="self-stretch w-px bg-black"></div>
         <Link href='/tablets' className="p-4">Tablets</Link>
